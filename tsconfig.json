@@ -1,0 +1,30 @@
+{
+    "compilerOptions": {
+        // Project options
+        "lib": ["esnext"],
+        "target": "es6",
+        "noEmit": true,
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+
+        // Module resolution
+        "baseUrl": "./",
+        "module": "esnext",
+        "moduleResolution": "node",
+        "esModuleInterop": true,
+        "isolatedModules": true,
+        "resolveJsonModule": true,
+        "allowSyntheticDefaultImports": true,
+
+        // Strict checks
+        "strict": true,
+        "forceConsistentCasingInFileNames": true,
+        "allowUnreachableCode": false,
+        "skipLibCheck": true,
+
+        // Linter checks
+        "noUnusedLocals": true,
+        "noUnusedParameters": true
+    },
+    "include": ["./**/*.ts"]
+}

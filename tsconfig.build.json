@@ -1,0 +1,18 @@
+{
+    "extends": "./tsconfig.json",
+    "compilerOptions": {
+        // Project options
+        "lib": ["es2020"],
+        "target": "es2020",
+        "noEmit": false,
+
+        // Module resolution
+        "module": "commonjs",
+
+        // Transpilation
+        "declaration": true,
+        "declarationMap": true,
+        "sourceMap": true,
+        "downlevelIteration": true
+    }
+}

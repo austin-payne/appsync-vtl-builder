@@ -1,0 +1,25 @@
+name: Continuous Integration
+
+on:
+  pull_request:
+    branches: [master]
+
+jobs:
+  status-checks:
+    name: Run - yarn ${{ matrix.command }}
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        command: ["constraints", "typecheck:changed"]
+    steps:
+      - uses: actions/checkout@v2.3.4
+        with:
+          ref: ${{ github.head_ref }}
+      - run: git fetch origin master:master --depth 1
+      - uses: actions/setup-node@v2.4.0
+        with:
+          node-version: 14
+      - name: Install dependencies
+        run: yarn bootstrap
+      - name: Run command - ${{ matrix.command }}
+        run: yarn ${{ matrix.command }}
