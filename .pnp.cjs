@@ -14,22 +14,12 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       {\
         "name": "@austin-payne/appsync-vtl-builder",\
         "reference": "workspace:."\
-      },\
-      {\
-        "name": "appsync-vtl-builder",\
-        "reference": "workspace:packages/appsync-vtl-builder"\
-      },\
-      {\
-        "name": "appsync-vtl-formatter",\
-        "reference": "workspace:packages/appsync-vtl-formatter"\
       }\
     ],\
     "enableTopLevelFallback": true,\
     "ignorePatternData": "(^(?:\\\\.yarn\\\\/sdks(?:\\\\/(?!\\\\.{1,2}(?:\\\\/|$))(?:(?:(?!(?:^|\\\\/)\\\\.{1,2}(?:\\\\/|$)).)*?)|$))$)",\
     "fallbackExclusionList": [\
-      ["@austin-payne/appsync-vtl-builder", ["workspace:."]],\
-      ["appsync-vtl-builder", ["workspace:packages/appsync-vtl-builder"]],\
-      ["appsync-vtl-formatter", ["workspace:packages/appsync-vtl-formatter"]]\
+      ["@austin-payne/appsync-vtl-builder", ["workspace:."]]\
     ],\
     "fallbackPool": [\
     ],\
@@ -4088,26 +4078,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["picomatch", "npm:2.3.1"]\
           ],\
           "linkType": "HARD"\
-        }]\
-      ]],\
-      ["appsync-vtl-builder", [\
-        ["workspace:packages/appsync-vtl-builder", {\
-          "packageLocation": "./packages/appsync-vtl-builder/",\
-          "packageDependencies": [\
-            ["appsync-vtl-builder", "workspace:packages/appsync-vtl-builder"],\
-            ["typescript", "patch:typescript@npm%3A4.8.4#~builtin<compat/typescript>::version=4.8.4&hash=701156"]\
-          ],\
-          "linkType": "SOFT"\
-        }]\
-      ]],\
-      ["appsync-vtl-formatter", [\
-        ["workspace:packages/appsync-vtl-formatter", {\
-          "packageLocation": "./packages/appsync-vtl-formatter/",\
-          "packageDependencies": [\
-            ["appsync-vtl-formatter", "workspace:packages/appsync-vtl-formatter"],\
-            ["typescript", "patch:typescript@npm%3A4.8.4#~builtin<compat/typescript>::version=4.8.4&hash=701156"]\
-          ],\
-          "linkType": "SOFT"\
         }]\
       ]],\
       ["aproba", [\

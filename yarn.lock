@@ -2635,22 +2635,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"appsync-vtl-builder@workspace:packages/appsync-vtl-builder":
-  version: 0.0.0-use.local
-  resolution: "appsync-vtl-builder@workspace:packages/appsync-vtl-builder"
-  dependencies:
-    typescript: 4.8.4
-  languageName: unknown
-  linkType: soft
-
-"appsync-vtl-formatter@workspace:packages/appsync-vtl-formatter":
-  version: 0.0.0-use.local
-  resolution: "appsync-vtl-formatter@workspace:packages/appsync-vtl-formatter"
-  dependencies:
-    typescript: 4.8.4
-  languageName: unknown
-  linkType: soft
-
 "aproba@npm:^1.0.3 || ^2.0.0, aproba@npm:^2.0.0":
   version: 2.0.0
   resolution: "aproba@npm:2.0.0"
