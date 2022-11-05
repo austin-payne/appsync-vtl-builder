@@ -1,0 +1,29 @@
+{
+    "name": "appsync-vtl-builder",
+    "version": "0.2.0",
+    "repository": {
+        "type": "git",
+        "url": "ssh://git@github.com/austin-payne/appsync-vtl-builder.git",
+        "directory": "packages/appsync-vtl-builder"
+    },
+    "license": "UNLICENSED",
+    "main": "src/index.ts",
+    "files": [
+        "src",
+        "dist"
+    ],
+    "scripts": {
+        "build": "yarn package:build",
+        "prepack": "yarn build",
+        "publish": "yarn package:publish",
+        "test": "yarn package:test",
+        "typecheck": "yarn package:typecheck"
+    },
+    "devDependencies": {
+        "typescript": "4.8.4"
+    },
+    "publishConfig": {
+        "main": "dist/index.js",
+        "types": "dist/index.d.ts"
+    }
+}
